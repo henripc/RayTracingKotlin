@@ -1,4 +1,4 @@
-class Ray(private val origin: Point3, private val direction: Vec3) {
+class Ray(var origin: Point3, var direction: Vec3) {
     constructor() : this(Point3(), Vec3())
 
     fun origin() = this.origin

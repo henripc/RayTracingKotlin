@@ -19,6 +19,7 @@ class HittableList() : Hittable {
                 closestSoFar = tempRec.t
                 rec.p = tempRec.p
                 rec.normal = tempRec.normal
+                rec.material = tempRec.material
                 rec.t = tempRec.t
                 rec.frontFace = tempRec.frontFace
             }

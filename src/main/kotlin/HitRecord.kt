@@ -1,6 +1,7 @@
 class HitRecord {
     var p = Point3()
     var normal = Vec3()
+    var material: Material? = null
     var t = 0.0
     var frontFace = false
 
