@@ -37,7 +37,7 @@ class Vec3(e0: Double, e1: Double, e2: Double) {
     fun length() = sqrt(this.lengthSquared())
 
     companion object {
-        fun dot(u: Vec3, v: Vec3) = u.x() * v.x() + u.y() + v.y() + u.z() + v.z()
+        fun dot(u: Vec3, v: Vec3) = u.x() * v.x() + u.y() * v.y() + u.z() * v.z()
 
         fun cross(u: Vec3, v: Vec3): Vec3 {
             return Vec3(u.y() * v.z() - u.z() * v.y(),
